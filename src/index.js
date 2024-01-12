@@ -4,11 +4,21 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Card from "./components/Card";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import BigCard from "./components/BigCard";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  { path: "/:id", element: <BigCard /> },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Card />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
