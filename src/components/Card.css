@@ -1,0 +1,9 @@
+.Card {
+  padding: 20px;
+  border: 4px solid #000;
+  border-radius: 30px;
+  background-color: rgb(255, 206, 244);
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
